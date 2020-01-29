@@ -117,23 +117,21 @@ li {
 
 @media only screen and (max-width: 1000px) {
 	.home-container,
-	.about-container,
-	.growth-container,
-	.timeline-container {
+	.growth-container {
 		flex-direction: column;
 		text-align: center;
+		margin-left: 20px;
+		margin-right: 20px;
 	}
 
-	h1 {
-		font-size: 1em;
+	.about-container,
+	.timeline-container {
+		flex-direction: column-reverse;
+		text-align: center;
+		margin-left: 20px;
+		margin-right: 20px;
 	}
 
-	p {
-		font-size: 1em;
-	}
-}
-
-@media only screen and (max-width: 1000px) {
 	.home-container > img,
 	.about-container > img,
 	.growth-container > img,
@@ -141,4 +139,18 @@ li {
 		height: 20vh;
 		width: auto;
 	}
+
+	.home-content > h1,
+	.about-content > h1,
+	.growth-content > h1,
+	.timeline-content > h1 {
+		font-size: 1.2em;
+	}
+
+	p {
+		font-size: 0.9em;
+	}
+}
+
+@media only screen and (max-width: 1000px) {
 }
